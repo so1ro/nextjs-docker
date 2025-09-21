@@ -11,7 +11,6 @@ export const ClientComponent = () => {
       try {
         const data = await getPokemonData(2);
         setPokemonData(data);
-        console.log("pokemonDataForClientComponent: ", data);
       } catch (error) {
         console.error(error);
       }
